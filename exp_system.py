@@ -12,7 +12,7 @@ pygame.mixer.init()
 
 def play_alarm():
     try:
-        pygame.mixer.music.load(r'C:\Users\SIDKUMAR\Desktop\more\Shvana\mini\Shvana\alarm.mp3')
+        pygame.mixer.music.load(r'alarm.mp3')
         pygame.mixer.music.play()
         print("🚨 CRITICAL HEALTH ALERT: Immediate Attention Needed!")
     except Exception as e:
@@ -57,7 +57,7 @@ class DogHealthExpert(KnowledgeEngine):
 
 # Load JSON and run
 if __name__ == '__main__':
-    with open(r'C:\Users\SIDKUMAR\Desktop\more\Shvana\mini\Shvana\test_dog_vitals.json') as file:
+    with open(r'test_dog_vitals.json') as file:
         test_cases = json.load(file)
 
     for index, data in enumerate(test_cases, start=1):
